@@ -1,6 +1,7 @@
 .git/
 .settings/
 bin/
-!src/Main.java/Team.java
+!src/Main.java/
+Team.java
 .classpath
 .project
