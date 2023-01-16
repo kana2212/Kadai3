@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,31 +14,23 @@ public class Main {
 		System.out.println("所属 :" + team.getBelongs());
 
 		//LIstの値をMapへ返還
-		List<String> list = new ArrayList<>();
-		list.add("麻天狼");
-		list.add("MTC");
-		list.add("F.P");
-		list.add("B.B");
+		List<String> list = Arrays.asList("麻天狼", "MTC", "F.P", "B.B");
 
 		Map<Integer, String> map = new HashMap<>();
-		int i = 1;
+		int i = 0;
 		for (String str : list) {
 			map.put(i, str);
 			i++;
 		}
 		System.out.println(map);
-		System.out.println("勝利の順位はこちらになります。");
+		System.out.println("勝利チームの順位はこの順になります。");
 
 		//try
 
 		try {
 			System.out.println(list.get(5));
-
-		} catch (
-
-		ArrayIndexOutOfBoundsException e) {
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("配列の範囲を超えています。");
-
 		}
 	}
 }
